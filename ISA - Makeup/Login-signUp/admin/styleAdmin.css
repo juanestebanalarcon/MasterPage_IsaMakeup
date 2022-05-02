@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+form {
+	margin-top: 10px;
+	margin-left:5px;
+	margin-right:5px;
+	}
+caption {
+	margin: 5px 5px 5px 5px;
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: bold;
+	}
+#productForm  {
+    float: left;
+    width: 50%;
+    height: 1200px;
+    background-color:  #ea85c7;
+    box-shadow: 0px 1px 10px #ffffff;
+    border-radius:10px;
+}
+#registryView {
+    float: right;
+    width: 50%;
+    height: 1200px;
+    background-color: #343434;
+    box-shadow: 0px 1px 10px #ffffff;
+    border-radius:10px;
+}
+input {
+    color: blue;
+    text-align: center;
+    background-color: white;
+    font-size: 16px;
+    font-family: Arial;
+    border-radius: 10px;
+}
+.inputField {
+    color: blue;
+    text-align: center;
+    background-color: white;
+    font-size: 16px;
+    font-family: Arial;
+    border-radius: 10px;
+}
+.inputs {
+    border-top:none;
+    border-left:none;
+    border-right:none
+}
+textarea {
+    color: blue;
+    text-align: justify;
+    background-color: white;
+    font-size: 16px;
+    font-family: Arial;
+    border-radius: 10px;
+}
+.inputField:focus {
+    border: 2px solid black;
+}
+input:focus {
+    border: 2px solid black;
+}
+textarea:focus {
+    border: 2px solid black;
+}
+label {
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+th {
+    color: white;
+    padding: 0 5px;
+    background-color: #4e4e4e;
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.submitBtn {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+.submitBtn:hover {
+    background-color: #592d84;
+}
+.submitBtn:active {
+    background-color: #00901c;
+}
+#table_adminForm:hover {
+    background-color: #35163b;
+}
+#buttonsCrud {
+    color: darkblue;
+    font-family: Arial;
+    text-decoration: underline;
+}
+#buttonsCrud:hover {
+    color: darkgreen;
+}
+#buttonsCrud:active {
+    color:greenyellow;
+}

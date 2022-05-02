@@ -1,0 +1,373 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{117AFE9B-C587-4732-BAE2-DB1F0739D5CC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ISA___Makeup</RootNamespace>
+    <AssemblyName>ISA - Makeup</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44347</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css_global\bootstrap-grid.css" />
+    <Content Include="Css_global\bootstrap-grid.min.css" />
+    <Content Include="Css_global\bootstrap-reboot.css" />
+    <Content Include="Css_global\bootstrap-reboot.min.css" />
+    <Content Include="Css_global\bootstrap.css" />
+    <Content Include="Css_global\bootstrap.min.css" />
+    <Content Include="Css_global\main.css" />
+    <Content Include="Css_global\sweetalert2.min.css" />
+    <Content Include="Css_global\uaoLogo_ex.png" />
+    <Content Include="Home-ISA\1banner_home.jpg" />
+    <Content Include="Home-ISA\CSS\home.css" />
+    <Content Include="Home-ISA\CSS\uaoLogo_ex.png" />
+    <Content Include="Home-ISA\default.aspx" />
+    <Content Include="Home-ISA\shoppingbasket.aspx" />
+    <Content Include="Home-ISA\index.html" />
+    <Content Include="Home-ISA\Isa - Makeup.Master" />
+    <Content Include="Img\1banner_home.jpg" />
+    <Content Include="ISA_master2\AccesoriesISA.aspx" />
+    <Content Include="ISA_master2\EyesISA.aspx" />
+    <Content Include="ISA_master2\InventoryView.aspx" />
+    <Content Include="ISA_master2\logIn_.aspx" />
+    <Content Include="ISA_master2\Inventario.aspx" />
+    <Content Include="ISA_master2\ProductImg\uaoLogo_ex.png" />
+    <Content Include="ISA_master2\SkincareISA.aspx" />
+    <Content Include="ISA_master2\LipsISA.aspx" />
+    <Content Include="ISA_master2\ISAhairAccesories.aspx" />
+    <Content Include="ISA_master2\Login.aspx" />
+    <Content Include="ISA_master2\IsaSite2.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\accesories\01. paleta-mezcladora-grande-324x324.jpg" />
+    <Content Include="Img\accesories\02. shadow-seal-klean-a-324x324.jpg" />
+    <Content Include="Img\accesories\03. Tapete-brocha.jpg" />
+    <Content Include="Img\accesories\04. Limpiabrochas.jpg" />
+    <Content Include="Img\accesories\05. Cosmetiquera.jpg" />
+    <Content Include="Img\accesories\06. CANGURO-BROCHAS-TRENDY-324x324.jpg" />
+    <Content Include="Img\accesories\home.css" />
+    <Content Include="Img\accesories\uaoLogo_ex.png" />
+    <Content Include="Img\Eyes\01. perfilador-de-cejas-y-separador-trendy-e-324x324.jpg" />
+    <Content Include="Img\Eyes\02. KIT-X-6-DELINEADORES-PERLADOS-TRENDY-REF-PE08-A-324x324.jpg" />
+    <Content Include="Img\Eyes\03. SOMBRA-TROPICAL-TRENDY-REF-TR01-C-324x324.jpg" />
+    <Content Include="Img\Eyes\04. SOMBRA-CITRIC-TRENDY-REF-C44-C-324x324.jpg" />
+    <Content Include="Img\Eyes\05. wonderful-c-324x324.jpg" />
+    <Content Include="Img\Eyes\06. pumpink-c-324x324.jpg" />
+    <Content Include="Img\Eyes\uaoLogo_ex.png" />
+    <Content Include="Img\Footer\1024px-Facebook_Logo_%282019%29.png" />
+    <Content Include="Img\Footer\Instagram.png" />
+    <Content Include="Img\Footer\location-icon.png" />
+    <Content Include="Img\Footer\uaoLogo_ex.png" />
+    <Content Include="Img\Footer\WhatsApp.png" />
+    <Content Include="Img\Hair\01. termoprotector-a-324x324.jpg" />
+    <Content Include="Img\Hair\02. cola-de-caballo--324x324.jpg" />
+    <Content Include="Img\Hair\03. bio-repolarizador-lamour-b-324x324.jpg" />
+    <Content Include="Img\Hair\04. bioelixir-lamour-324x324.jpg" />
+    <Content Include="Img\Hair\05. tratamiento-lamour-b-324x324.jpg" />
+    <Content Include="Img\Hair\06. polimero-lamour-324x324.jpg" />
+    <Content Include="Img\Hair\uaoLogo_ex.png" />
+    <Content Include="Img\home.css" />
+    <Content Include="Img\Lips\01. KIT-X-6-LABIALES-GASEOSA-TRENDY-REF-SP05-A-324x324.jpg" />
+    <Content Include="Img\Lips\02. shiny-d-324x324.jpg" />
+    <Content Include="Img\Lips\03. IMG_0611-324x324.jpg" />
+    <Content Include="Img\Lips\04. lukasi-324x324.jpg" />
+    <Content Include="Img\Lips\05. lapiz-delinador-a-324x324.jpg" />
+    <Content Include="Img\Lips\06. labial-miss-rose-e-324x324.jpg" />
+    <Content Include="Img\Lips\uaoLogo_ex.png" />
+    <Content Include="Img\login-icon-images-24.jpg" />
+    <Content Include="Img\medios_de_pago.png" />
+    <Content Include="Img\nav-logo.jpeg" />
+    <Content Include="Img\Shopping-Basket-Icon.png" />
+    <Content Include="Img\Skincare\01. agua-de-rosas-grande-480ml-324x324.jpg" />
+    <Content Include="Img\Skincare\02. mascarilla-puntos-a-324x324.jpg" />
+    <Content Include="Img\Skincare\03. colagenos-ojos-a-324x324.jpg" />
+    <Content Include="Img\Skincare\04. colageno-labios-a-324x324.jpg" />
+    <Content Include="Img\Skincare\05. tonico-a-324x324.jpg" />
+    <Content Include="Img\Skincare\06. jojoba-raquel-a-324x324.jpg" />
+    <Content Include="Img\Skincare\uaoLogo_ex.png" />
+    <Content Include="Img\trendy_redis_user-final.png" />
+    <Content Include="Img\uaoLogo_ex.png" />
+    <Content Include="ISA_master2\uaoLogo_ex.png" />
+    <Content Include="JS_global\bootstrap.bundle.js" />
+    <Content Include="JS_global\bootstrap.bundle.min.js" />
+    <Content Include="JS_global\bootstrap.js" />
+    <Content Include="JS_global\bootstrap.min.js" />
+    <Content Include="JS_global\carrito.js" />
+    <Content Include="JS_global\compra.js" />
+    <Content Include="JS_global\compre.js" />
+    <Content Include="JS_global\jquery-3.4.1.min.js" />
+    <Content Include="JS_global\pedido.js" />
+    <Content Include="JS_global\popper.min.js" />
+    <Content Include="JS_global\sweetalert2.min.js" />
+    <Content Include="JS_global\uaoLogo_ex.png" />
+    <Content Include="JS_global\validacion.js" />
+    <Content Include="Login-signUp\admin\inventario.html" />
+    <Content Include="Login-signUp\admin\scriptAdmin.js" />
+    <Content Include="Login-signUp\admin\styleAdmin.css" />
+    <Content Include="Login-signUp\admin\uaoLogo_ex.png" />
+    <Content Include="Login-signUp\ImagesSlideshow_login\01_slide.jpg" />
+    <Content Include="Login-signUp\ImagesSlideshow_login\02_slide.jpg" />
+    <Content Include="Login-signUp\ImagesSlideshow_login\03_slide.jpg" />
+    <Content Include="Login-signUp\ImagesSlideshow_login\avatar_11.png" />
+    <Content Include="Login-signUp\login.html" />
+    <Content Include="Login-signUp\srcipt_slideshow.js" />
+    <Content Include="Login-signUp\styleLogSig.css" />
+    <Content Include="Login-signUp\uaoLogo_ex.png" />
+    <Content Include="othertPages\accesories\accesories.html" />
+    <Content Include="othertPages\accesories\IMG\01. limpiador-de-brochas-y-pinceles.jpg" />
+    <Content Include="othertPages\accesories\IMG\02. limpiador-de-brochas-electronico.jpg" />
+    <Content Include="othertPages\accesories\IMG\03. brocha-n-80-para-todo-tipo-de-maquillaje-look-expert.jpg" />
+    <Content Include="othertPages\accesories\IMG\04. cinturon-professional-makeup.jpg" />
+    <Content Include="othertPages\accesories\IMG\05. brocha-n-81-para-maquillaje-en-polvo-look-expert.jpg" />
+    <Content Include="othertPages\accesories\IMG\06. kit-completo-con-6-brochas-professional-make-up.jpg" />
+    <Content Include="othertPages\accesories\IMG\07. esponja-de-maquillaje-3d.jpg" />
+    <Content Include="othertPages\accesories\IMG\08. afilalapices-cosmetica-8-mm.jpg" />
+    <Content Include="othertPages\accesories\IMG\09. aplicador-cosmetico-algodon-diam-6-cm.jpg" />
+    <Content Include="othertPages\accesories\IMG\uaoLogo_ex.png" />
+    <Content Include="othertPages\accesories\uaoLogo_ex.png" />
+    <Content Include="othertPages\eyes\eyes.html" />
+    <Content Include="othertPages\eyes\IMG\01.kit-sombra-liquida-trendy-324x324.jpg" />
+    <Content Include="othertPages\eyes\IMG\02. pestañina-2-en-1-324x324.jpg" />
+    <Content Include="othertPages\eyes\IMG\03. sombra-peach-kawaii-pequeña-5-324x324.jpg" />
+    <Content Include="othertPages\eyes\IMG\04. rainbow-d-324x324.jpg" />
+    <Content Include="othertPages\eyes\IMG\05. coco-g-324x324.jpg" />
+    <Content Include="othertPages\eyes\IMG\06. splashy-candies-ucanbe-b-324x324.jpg" />
+    <Content Include="othertPages\eyes\IMG\07. EEAA6C56-32EC-47B1-BD0A-C75D3A6EF1C1-copia-324x324.jpg" />
+    <Content Include="othertPages\eyes\IMG\08. 573EB061-F0D3-4CED-9613-A85A057F9841-324x324.jpg" />
+    <Content Include="othertPages\eyes\IMG\09. 4031E0E7-68DD-44F7-9C30-FE29004A2779-copia-324x324.jpg" />
+    <Content Include="othertPages\eyes\IMG\uaoLogo_ex.png" />
+    <Content Include="othertPages\eyes\styleEyes.css" />
+    <Content Include="othertPages\eyes\uaoLogo_ex.png" />
+    <Content Include="othertPages\hairAccesories\hairAccesories.html" />
+    <Content Include="othertPages\hairAccesories\IMG\01. s2033264-main-zoom.jpg" />
+    <Content Include="othertPages\hairAccesories\IMG\02. s2030286-main-zoom.jpg" />
+    <Content Include="othertPages\hairAccesories\IMG\03. s1895580-main-zoom.jpg" />
+    <Content Include="othertPages\hairAccesories\IMG\04. s2200095-main-zoom.jpg" />
+    <Content Include="othertPages\hairAccesories\IMG\05. s1802099-main-zoom.jpg" />
+    <Content Include="othertPages\hairAccesories\IMG\06. s2034965-main-zoom.jpg" />
+    <Content Include="othertPages\hairAccesories\IMG\07. s2201044-main-zoom.jpg" />
+    <Content Include="othertPages\hairAccesories\IMG\08. s1602960-main-zoom.jpg" />
+    <Content Include="othertPages\hairAccesories\IMG\09. s2126985-main-zoom.jpg" />
+    <Content Include="othertPages\hairAccesories\IMG\uaoLogo_ex.png" />
+    <Content Include="othertPages\hairAccesories\styleHairAccesories.css" />
+    <Content Include="othertPages\hairAccesories\uaoLogo_ex.png" />
+    <Content Include="othertPages\lips\IMG\01. tinta-school-collection-324x324.jpg" />
+    <Content Include="othertPages\lips\IMG\02. exfoliante-f-324x324.jpg" />
+    <Content Include="othertPages\lips\IMG\03. argan-1-324x324.jpg" />
+    <Content Include="othertPages\lips\IMG\04. IMG_0593-324x324.jpg" />
+    <Content Include="othertPages\lips\IMG\05. IMG_0550-324x324.jpg" />
+    <Content Include="othertPages\lips\IMG\06. lg199-a-324x324.jpg" />
+    <Content Include="othertPages\lips\IMG\07. b6-todos-324x324.jpg" />
+    <Content Include="othertPages\lips\IMG\08. soft-lips-todo-324x324.jpg" />
+    <Content Include="othertPages\lips\IMG\09. trendy-labial-4-324x324.jpg" />
+    <Content Include="othertPages\lips\IMG\uaoLogo_ex.png" />
+    <Content Include="othertPages\lips\lips.html" />
+    <Content Include="othertPages\lips\styleLips.css" />
+    <Content Include="othertPages\lips\uaoLogo_ex.png" />
+    <Content Include="othertPages\skinCare\IMG\01. LIMPIADOR-FACIAL-GATICO-CP03-A-324x324.jpg" />
+    <Content Include="othertPages\skinCare\IMG\02. IMG_0405-324x324.jpg" />
+    <Content Include="othertPages\skinCare\IMG\03. 68997EFA-AD23-4258-AAEE-E23913B357CC-324x324.jpg" />
+    <Content Include="othertPages\skinCare\IMG\04. IMG_0545-324x324.jpg" />
+    <Content Include="othertPages\skinCare\IMG\05. leche-raquel-a-324x324.jpg" />
+    <Content Include="othertPages\skinCare\IMG\06. tratamiento-dolce-bella-a-324x324.jpg" />
+    <Content Include="othertPages\skinCare\IMG\07. suero-b-324x324.jpg" />
+    <Content Include="othertPages\skinCare\IMG\08. toalla-peque-2-324x324.jpg" />
+    <Content Include="othertPages\skinCare\IMG\09. IMG_0442-324x324.jpg" />
+    <Content Include="othertPages\skinCare\IMG\uaoLogo_ex.png" />
+    <Content Include="othertPages\skinCare\Skincare.html" />
+    <Content Include="othertPages\skinCare\styleSkincare.css" />
+    <Content Include="othertPages\skinCare\uaoLogo_ex.png" />
+    <Content Include="source_img_video_extra\01.png" />
+    <Content Include="source_img_video_extra\02.png" />
+    <Content Include="source_img_video_extra\03.png" />
+    <Content Include="source_img_video_extra\04.png" />
+    <Content Include="source_img_video_extra\05.png" />
+    <Content Include="source_img_video_extra\06.jpeg" />
+    <Content Include="source_img_video_extra\07.png" />
+    <Content Include="source_img_video_extra\08.png" />
+    <Content Include="source_img_video_extra\09.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\product_structure.cs" />
+    <Compile Include="Classes\shopcart_class.cs" />
+    <Compile Include="Classes\SqlServerConnection.cs" />
+    <Compile Include="Classes\SqlServerConnectionException.cs" />
+    <Compile Include="Home-ISA\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home-ISA\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home-ISA\shoppingbasket.aspx.cs">
+      <DependentUpon>shoppingbasket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home-ISA\shoppingbasket.aspx.designer.cs">
+      <DependentUpon>shoppingbasket.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home-ISA\Isa - Makeup.Master.cs">
+      <DependentUpon>Isa - Makeup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home-ISA\Isa - Makeup.Master.designer.cs">
+      <DependentUpon>Isa - Makeup.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ISA_master2\AccesoriesISA.aspx.cs">
+      <DependentUpon>AccesoriesISA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISA_master2\AccesoriesISA.aspx.designer.cs">
+      <DependentUpon>AccesoriesISA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISA_master2\EyesISA.aspx.cs">
+      <DependentUpon>EyesISA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISA_master2\EyesISA.aspx.designer.cs">
+      <DependentUpon>EyesISA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISA_master2\InventoryView.aspx.cs">
+      <DependentUpon>InventoryView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISA_master2\InventoryView.aspx.designer.cs">
+      <DependentUpon>InventoryView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISA_master2\logIn_.aspx.cs">
+      <DependentUpon>logIn_.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISA_master2\logIn_.aspx.designer.cs">
+      <DependentUpon>logIn_.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISA_master2\Inventario.aspx.cs">
+      <DependentUpon>Inventario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISA_master2\Inventario.aspx.designer.cs">
+      <DependentUpon>Inventario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISA_master2\SkincareISA.aspx.cs">
+      <DependentUpon>SkincareISA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISA_master2\SkincareISA.aspx.designer.cs">
+      <DependentUpon>SkincareISA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISA_master2\LipsISA.aspx.cs">
+      <DependentUpon>LipsISA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISA_master2\LipsISA.aspx.designer.cs">
+      <DependentUpon>LipsISA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISA_master2\ISAhairAccesories.aspx.cs">
+      <DependentUpon>ISAhairAccesories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISA_master2\ISAhairAccesories.aspx.designer.cs">
+      <DependentUpon>ISAhairAccesories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISA_master2\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISA_master2\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISA_master2\IsaSite2.Master.cs">
+      <DependentUpon>IsaSite2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISA_master2\IsaSite2.Master.designer.cs">
+      <DependentUpon>IsaSite2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1579</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44347/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

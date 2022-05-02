@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ISA - Inventory</title>
+<link rel="stylesheet" href="styleAdmin.css">
+<link rel="stylesheet" href="../../home.css">
+<link rel="shortcut icon" type="image/png" href="../../Img/nav-logo.jpeg">
+<script src="scriptAdmin.js"></script>
+</head>
+<body>
+    <div class="header">
+    <div id="nav">
+   <div class="logoclass">
+        <img src="../../Img/nav-logo.jpeg" alt="ISA-logo" id="logo">
+   </div>
+    <ul id="navigation">
+        <li><a href="../../index.html" target="_parent">Home</a></li>
+        <li><a href="../../otherPages/accesories/accesories.html" target="_parent">Accesories</a></li>
+        <li><a href="../../otherPages/eyes/eyes.html" target="_parent" target="_parent">Eyes</a></li>
+        <li><a href="../../otherPages/lips/lips.html" target="_parent">Lips</a></li>
+        <li><a href="../../otherPages/hairAccesories/hairAccesories.html" target="_parent">Hair Care</a></li>
+        <li><a href="../../otherPages/skinCare/Skincare.html" target="_parent">Skincare</a></li>
+    </ul>
+<div class="logoright">
+<a href="#"><img src="../../Img/Shopping-Basket-Icon.png" alt="ISA-logo" id="logoD"></a>
+</div>
+<div class="logor">
+    <a href="../../Login-signUp/login.html" target="_parent"><img src="../../Img/trendy_redis_user-final.png" alt="ISA-logo" id="logoD"></a>
+</div>
+</div>
+</div>
+<!-- Product form -->
+<section id="productForm">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+    <form id="formAdmin" name="adminForm" onsubmit="event.preventDefault(); sendData();">
+        <center><table id="table_adminForm" border="0" width="auto" style="border-radius: 10px; background-color: deeppink; height: 250px">
+           <caption style="text-align: center; color:white; font-size: 20px; font-family: Verdana;c font-weight: bold;">Inventory</caption>
+            <tr>
+                <td> <label for="productId">Product Id: </label> </td>
+                <td> <input type="text" required size="4" maxlength="4" id="productId"> </td>
+            </tr>
+            <tr>
+            <td> <label for="productName">Product Name: </label> </td>
+            <td> <input type="text" required size="20" maxlength="20" id="productName"></td>
+            </tr>
+            <tr>
+                <td> <label for="productPrice">Price (COP): </label></td>
+            <td> <input type="number" required size="6" maxlength="10" id="price"></td>
+            </tr>
+            <tr>
+                <td> <label for="iva">IVA %:</label> </td>
+                <td> <select name="ivaOp" id="ivaSelect" required>
+                    <option value="0">0</option>
+                    <option value="8">8%</option>
+                    <option value="19">19%</option>
+                </select> </td>
+            </tr>
+            <tr>
+                <td> <label for="stateProduct">Available?:</label> </td>
+            <td>  
+            <label><input type="radio" name="chkProduct" value="Available" id="chkProduct">Available</label>
+            <label><input type="radio" name="chkProduct" value="notAvailable" id="chkProduct">not Available</label>
+            </td>
+            </tr>
+            <tr>
+                <td> <label for="registryDate">Registry date: </label> </td>
+            <td> <input type="date" name="registryDate" min="02/01/2021" value="mm/dd/yyyy" id="registryDate"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comments">Add a comment:</label>
+                </td>
+                <td>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Write a comment..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="align-items: center; text-align: center;">
+                   <input name="sendBtn" id="submitBtn" type="submit" style="text-align: center; color: white; background-color: #000000; border-radius: 10px; padding: 5px 5px;" onclick="sendData();">
+                </td>
+            </tr>
+        </table>
+    </form>
+</section>
+<!-- Registry table section -->
+<section id="registryView">
+   <br>
+   <br>
+   <br>
+   <br>
+    <center><table id="tableRegView">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Price ($)</th>
+                <th>Iva (%)</th>
+                <th>Availability</th>
+                <th>Registry Date</th>
+                <th>Comments</th>
+                <th>Actions &nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody id="bodyTableRegView" style="background-color: #a5a5a5; color: white; font-family: Verdana;">
+            
+        </tbody>
+        <tfoot>
+<td colspan="8" style="text-align: center; background-color: #151515; color: dimgray; font-size: 25px; font-family: Arial; border-radius: 10px;"> CRUD System </td>        
+   </tfoot>
+    </table>
+</section>
+<script>
+dataPreload();    
+</script>
+<!-- Footer -->
+<footer id="footerHome">
+   <br>
+   <br>
+   <h6 style="text-align: center; color: white; font-family: Verdana; font-size: 30px;">About Us</h6>
+ <br>
+     <br>
+     <br>
+    <center><table border="0" style="width: 100%; color:white; text-align: center; white-space: pre;" >
+<tbody>
+            <tr>
+            <td style="text-align: center; font-size: 25px; font-family: Arial;">Locations</td>
+            <td style="text-align: center; font-size: 25px; font-family: Arial;">Payment Methods</td>
+            <td style="text-align: center; font-size: 25px; font-family: Arial;">Social Networks</td>
+        </tr>
+        <tr>
+            <td>
+            <center><img src="../../Img/Footer/location-icon.png" alt="location" id="location">
+        </td>
+        <td><center><img src="../../Img/medios_de_pago.png" alt="payment" id="paymentMethods"></td>
+        <td>
+            <center> <ul id="SocialUL">
+                <li id="social"><a href="#" tarjet"_blank" id="linksS"> <img src="../../Img/Footer/1024px-Facebook_Logo_(2019).png" alt="social" id="footerS"> Facebook </a></li>
+                <li id="social"><a href="#" target"_blank" id="linksS"> <img src="../../Img/Footer/Instagram.png" alt="social" id="footerS"> Instagram </a></li>
+                <li id="social"><a href="#" tarjet"_blank" id="linksS"> <img src="../../Img/Footer/WhatsApp.png" alt="social" id="footerS"> WhatsApp </a></li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+        <td> 
+        <h5 id="titleL">CENTRO COMERCIAL: CENTRO MAYOR</h5>
+        <span id="dir">Carrera 27 sur #38A-83 local 3012
+          Tercer piso Centro Comercial</span>
+          </td>
+          </tr>
+</tbody>
+          <tfoot>
+              <td colspan="3" style="text-align: center; background-color: #450e36; color: white; font-size: 20px; font-family: Vibes,Arial;">Free shipping from <span id="shipping">$200.000</span></td>
+          </tfoot>
+    </table>
+</footer>
+</body>
+</html>
